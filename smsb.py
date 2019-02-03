@@ -1,7 +1,0 @@
-import requests
-
-url = 'https://taxi.yandex.ru/3.0/auth/'
-headers = {'Host': 'taxi.yandex.ru', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0','Accept': 'application/json, text/javascript, */*; q=0.01','Accept-Language': 'ru_RU','Accept-Encoding': 'gzip, deflate, br','Referer': 'https://taxi.yandex.ru/','Content-Type': 'application/json','Cache-Control': 'no-cache','X-Requested-With': 'XMLHttpRequest','Content-Length': '64','DNT': '1','Connection': 'keep-alive','Cookie': 'yandexuid=369805791549152724; fuid01=5c5631d517a33380.Cb5IeXw8X5Tw4kUf3idjaBq-Tnq8f9DcAWV7lscKexcvIMm0OrVNYL1TM0tRGTtQiko3LM79lUGNgEvVslOBHRd72_5UYKe9enG_2BYIPd035YSYfISQhGcKoHJvlDc-; _id=6ac55842f2014555a6286cb122ef9b71; i=E5wTidIcQcgqMu7jRhlSF0j3L5ejJN4cu+TAQCLbWo4GtPL4k1jZCsPJAm+D6prJvWIbkD7OTIHXkus3Dna0mRE6cDs=; yp=1864512726.yrtsi.1549152726; _ym_wasSynced=%7B%22time%22%3A1549152764865%2C%22params%22%3A%7B%22eu%22%3A0%7D%2C%22bkParams%22%3A%7B%7D%7D; _ym_uid=1549152765221332434; _ym_d=1549152765; mda=0; _ym_isad=2','TE': 'Trailers','Pragma': 'no-cache',}
-data = {"id":"6ac55842f2014555a6286cb122ef9b71"},{"phone":"+79999735861"}
-res = requests.post(url, data=data, headers=headers)
-print ('done')
